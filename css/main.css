@@ -1,0 +1,325 @@
+@charset "UTF-8";
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #ffe270;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.heading {
+  font-size: 7em;
+  text-transform: uppercase;
+  text-align: center;
+}
+.heading--left {
+  color: white;
+}
+.heading--right {
+  color: black;
+}
+.heading__paragraph {
+  display: flex;
+  color: #585050;
+  margin-bottom: 5rem;
+  font-weight: 700;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+section p4 {
+  font-size: 1.6em;
+}
+section h2::after {
+  content: "_________________________";
+  display: block;
+  color: black solid;
+}
+section h3 {
+  font-size: 3.2em;
+  text-transform: uppercase;
+}
+
+.u-center-text {
+  text-align: center;
+}
+
+.u--margin--top__big {
+  margin-top: 7em;
+}
+
+.u--line--height {
+  line-height: 1.5;
+}
+
+header {
+  background-image: url(/images/banner-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.header__main {
+  width: 100%;
+  height: 80%;
+  position: relative;
+}
+.header__main--box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*centrowanie tekstu nagłówka*/
+}
+
+.nav {
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav__logo {
+  padding: 3rem;
+}
+.nav__links {
+  list-style: none;
+  display: flex;
+  font-weight: 700;
+  font-size: 1.6em;
+}
+.nav__item a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 4rem 2rem;
+  text-transform: uppercase;
+}
+.nav__item:hover a {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.section__container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.section__heading--big {
+  font-size: 5em;
+  text-transform: uppercase;
+  text-align: center;
+}
+.section__heading--big--right {
+  color: white;
+}
+
+.section--courses {
+  display: flex;
+  justify-content: space-between;
+  text-align: normal;
+  align-items: normal;
+  padding-top: 3rem;
+}
+.section--courses img {
+  max-width: 100%;
+  height: auto;
+  padding-bottom: 1rem;
+}
+.section--courses__paragraph {
+  padding-top: 3rem;
+  font-size: 2em;
+}
+.section--courses__column {
+  max-width: 30%;
+}
+
+.section--teachers {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: none;
+  padding-top: 3rem;
+}
+.section--teachers img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+.section--teachers h3 {
+  padding: 2rem 0;
+}
+.section--teachers__paragraph {
+  padding: 0 3rem;
+}
+.section--teachers__column {
+  max-width: 20%;
+}
+
+.section--aboutus {
+  display: flex;
+  justify-content: space-between;
+  text-align: none;
+  align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 10rem;
+}
+.section--aboutus--content {
+  max-width: 50%;
+  padding-right: 3em;
+  text-align: justify;
+}
+.section--aboutus__paragraph {
+  color: gray;
+  padding-bottom: 2rem;
+  word-spacing: 3px;
+}
+.section--aboutus__right {
+  font-size: 6rem;
+}
+
+footer {
+  background-color: black;
+  width: 100%;
+  padding: 0 19rem;
+  display: flex;
+  position: relative;
+}
+footer p {
+  color: #cccccc;
+  position: absolute;
+  top: 20%;
+  right: 13%;
+}
+
+.footer__nav {
+  list-style: none;
+  font-weight: 700;
+  padding: 3rem 3rem 3rem 0;
+  padding-inline-start: 0;
+}
+
+.footer__item {
+  padding: 0.3rem 0;
+}
+.footer__item a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-size: 1.6em;
+}
+
+.button {
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  width: 10em;
+  font-size: 3em;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  padding: 1.5rem 1.5rem;
+}
+.button__heading {
+  margin: 0 2rem;
+  box-shadow: rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.19);
+}
+.button__heading--left {
+  background-color: black;
+  color: white;
+}
+.button__section {
+  font-size: 2em;
+  color: white;
+  background-color: black;
+  margin-top: 1rem;
+}
+
+@media (min-width: 1850px) {
+  .heading--left {
+    padding-left: 0.8em;
+  }
+}
+@media (max-width: 600px) {
+  .u--margin--top__big {
+    margin-top: 3em;
+  }
+
+  .nav {
+    flex-direction: column;
+  }
+
+  .nav__logo {
+    padding: 0;
+    padding-top: 2rem;
+  }
+
+  .nav__item a {
+    padding: 1.5rem 1rem;
+  }
+
+  .heading {
+    font-size: 4.5em;
+  }
+
+  .heading__paragraph {
+    font-size: 1.7em;
+    padding-top: 1.5em;
+  }
+
+  .button__heading {
+    font-size: 2em;
+    padding: 1rem;
+    margin-top: 0.5em;
+  }
+
+  section h2::after {
+    content: "______________________________________________";
+  }
+
+  .section__container {
+    max-width: 90%;
+  }
+
+  .section--courses, .section--teachers, .section--aboutus {
+    flex-direction: column;
+  }
+
+  .section--courses__column, .section--teachers__column, .section--aboutus--content {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .section--courses__paragraph {
+    padding-top: 0;
+  }
+
+  .section--aboutus__right {
+    font-size: 5rem;
+  }
+
+  .section--aboutus {
+    padding-bottom: 3rem;
+  }
+
+  .button__section {
+    margin-bottom: 3rem;
+  }
+
+  footer {
+    padding: 0 2rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

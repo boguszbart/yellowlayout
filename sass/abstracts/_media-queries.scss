@@ -1,0 +1,88 @@
+
+@media (min-width: 1850px) {
+    .heading--left {
+        padding-left: 0.8em;  //it centers heading in header right above buttons
+    }
+}
+
+
+@media (max-width: 600px) {
+    .u--margin--top__big {
+        margin-top: 3em
+    }
+
+    //navigation
+
+    .nav{
+        flex-direction: column;
+    }
+
+    .nav__logo {
+        padding: 0;
+        padding-top: 2rem;
+    }
+
+    .nav__item a {
+        padding: 1.5rem 1rem;
+    }
+
+    //heading
+
+    .heading {
+        font-size: 4.5em
+    }
+
+    .heading__paragraph {
+        font-size: 1.7em;
+        padding-top: 1.5em;
+    }
+
+    .button__heading {
+        font-size: 2em;
+        padding: 1rem;
+        margin-top:0.5em
+    }
+
+    //section
+
+    section {
+        h2::after {
+            content: "______________________________________________";
+        }
+    }
+
+    .section__container {
+        max-width: 90%;
+    }
+
+    .section--courses, .section--teachers, .section--aboutus {
+        flex-direction: column;
+    }
+
+    .section--courses__column, .section--teachers__column, .section--aboutus--content {
+        max-width: 100%;
+        padding: 0
+    }
+
+    .section--courses__paragraph {
+        padding-top:0
+    }
+
+    .section--aboutus__right {
+        font-size: 5rem
+    }
+
+    .section--aboutus {
+        padding-bottom: 3rem
+    }
+
+    .button__section {
+        margin-bottom: 3rem
+    }
+
+    //footer
+
+    footer {
+        padding: 0 2rem
+    }
+}

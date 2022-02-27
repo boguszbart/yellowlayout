@@ -1,0 +1,18 @@
+@use '../abstracts/variables' as v;
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: v.$body-color;
+}

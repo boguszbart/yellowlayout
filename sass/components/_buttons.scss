@@ -1,0 +1,27 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+
+
+
+.button {
+    @include m.button;
+
+    &__heading {
+        margin:0 2rem;
+        box-shadow: v.$button-shadow-first, 
+        v.$button-shadow-second;
+
+        &--left {
+            background-color: black;
+            color: white;
+        }
+    }
+
+    &__section {
+        font-size: 2em;
+        color: white;
+        background-color: black;
+        margin-top: 1rem;
+    }
+}
