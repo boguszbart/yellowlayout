@@ -1,0 +1,85 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+@use '../base/typography' as t;
+
+
+.section__container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.section__heading--big {
+    font-size: v.$s-fs-heading;
+    text-transform: uppercase;
+    
+    &--right {
+        color: v.$heading-white;
+    }
+}
+
+.section--courses {
+
+
+    @include m.section_flex(normal, normal);
+
+    img {
+        max-width: 100%;
+        height: auto;
+        padding-bottom: 1rem;
+    }
+
+    &__paragraph {
+        padding-top:3rem;
+        font-size: v.$s-fs-paragraph;
+    }  
+
+    &__column {
+        max-width: 30%;
+    }
+}
+
+
+.section--teachers {
+    @include m.section_flex(center, none);
+
+    img {
+        max-width:  100%;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    h3 {
+        padding: 2rem 0
+    }
+
+    &__paragraph {
+        padding: 0 3rem;
+    }
+
+    &__column {
+        max-width: 20%;
+    }
+
+}
+
+
+.section--aboutus {
+    @include m.section_flex(none, center);
+    padding-bottom: 10rem;
+
+    &--content {
+        max-width:50%;
+        padding-right: 3em;
+        text-align: justify;
+    }
+
+    &__paragraph {
+        color: v.$section-paragraph;
+        padding-bottom: 2rem;
+        word-spacing: 3px;
+    }
+
+    &__right {
+        font-size: 6rem;
+    }
+}

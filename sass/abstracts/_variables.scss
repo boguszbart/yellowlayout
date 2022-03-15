@@ -1,0 +1,69 @@
+// colors
+
+$yellow-medium: rgb(248, 220, 95);
+
+$white: rgba(255, 255, 255, 1);
+
+$black: (
+    basic:  rgba(0, 0, 0, 1),
+    light: rgba(0, 0, 0, 0.7),
+    lighter: rgba(0, 0, 0, 0.2)
+);
+
+$gray: (
+    basic: rgb(128, 128, 128),
+    light: rgb(117, 113, 113)
+);
+
+// body
+
+$body-color: $yellow-medium;
+
+// heading
+
+$heading-white: $white;
+
+$heading-black: map-get($black, basic);
+
+$heading-paragraph: map-get($gray, light);
+
+$h-fs: 7em;
+
+
+// section
+
+$section-paragraph: map-get($gray, basic);
+
+$s-fs-heading: 5em;
+
+$s-fs-paragraph: 2em;
+
+// nav 
+
+$nav-background-color: map-get($black, lighter);
+
+$nav-background-color-hover: map-get($black, light);
+
+$nav-color: $white;
+
+// footer
+
+$footer-background: map-get($black, basic);
+
+$footer-text: map-get($gray, light);
+
+$footer-nav-color: $white;
+
+// buttons
+
+$button-shadow: map-get($black, lighter);
+
+$button-backgroundcolor: map-get($black, basic);
+
+$button-color: $white;
+
+// text
+
+$text-small: 1.6em;
+
+$text-medium: 3.2em;

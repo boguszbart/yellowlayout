@@ -1,0 +1,21 @@
+@use '../abstracts/variables' as v;
+
+
+@mixin button {
+    border:none;
+    cursor: pointer;
+    text-transform: uppercase;    
+    width: 10em;
+    font-size: 3em;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    padding: 1.5rem 1.5rem;
+
+}
+
+@mixin section_flex($text_align, $align_items) {
+        display: flex;
+        justify-content: space-between;
+        text-align: $text_align;
+        align-items: $align_items;
+        padding-top: 3rem
+}
