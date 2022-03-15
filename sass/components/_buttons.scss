@@ -9,12 +9,11 @@
 
     &__heading {
         margin:0 2rem;
-        box-shadow: v.$button-shadow-first, 
-        v.$button-shadow-second;
+        box-shadow: v.$button-shadow, v.$button-shadow;
 
         &--left {
-            background-color: black;
-            color: white;
+            background-color: v.$button-backgroundcolor;
+            color: v.$button-color;
         }
     }
 

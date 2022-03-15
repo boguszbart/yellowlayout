@@ -11,10 +11,9 @@
 .section__heading--big {
     font-size: v.$s-fs-heading;
     text-transform: uppercase;
-    text-align: center;
-
+    
     &--right {
-        color: v.$heading-first;
+        color: v.$heading-white;
     }
 }
 

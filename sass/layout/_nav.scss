@@ -3,7 +3,7 @@
 
 
 .nav {
-    background-color: v.$nav-first;
+    background-color: v.$nav-background-color;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -22,13 +22,13 @@
         &__item a {
             display: inline-block;
             text-decoration: none;
-            color: v.$nav-third;
+            color: v.$nav-color;
             padding: 4rem 2rem;
             text-transform: uppercase;
         }
 
         &__item:hover a {
-            background-color: v.$nav-second ;
+            background-color: v.$nav-background-color-hover ;
         }
             
 }

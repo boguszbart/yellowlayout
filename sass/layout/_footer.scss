@@ -3,9 +3,6 @@
 footer {
     background-color: v.$footer-background;
     width:100%;
-    padding:0 19rem ;
-    display: flex;
-    position: relative;
 
     p {
         color: v.$footer-text;
@@ -15,20 +12,26 @@ footer {
     }
 }
 
-    .footer__nav {
-        list-style: none;
-        font-weight: 700;
-        padding: 3rem 3rem 3rem 0;
-        padding-inline-start: 0;
-    }
+.footer__nav {
+    list-style: none;
+    font-weight: 700;
+    padding-inline-start: 0;
+}
+
+.footer__container {
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+}
 
 .footer__item {
-        padding: 0.3rem 0;
+        padding: 1rem 10rem 1rem 0;
 
     a {
         text-decoration: none;
         text-transform: uppercase;
-        color: v.$footer-nav;
+        color: v.$footer-nav-color;
         font-size: v.$text-small;
     }
 }

@@ -5,8 +5,44 @@
     }
 }
 
+@media (max-width: 1600px) {
+    .button__heading {
+        font-size: 3em;
+        padding: 1rem;
+        margin-top:0.5em
+    }
 
-@media (max-width: 600px) {
+}
+
+@media (max-width: 1100px) {
+
+    .button__heading {
+        font-size: 2em;
+        padding: 1rem;
+        margin-top:0.5em
+    }
+
+    .section--teachers {
+        flex-direction: column;
+    }
+
+    .section--teachers__column {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .button__section {
+        margin-bottom: 3rem;
+    }
+
+    .u--margin--top__big {
+        margin-top: 1.2rem;
+    }
+
+
+}
+
+@media (max-width: 750px) {
     .u--margin--top__big {
         margin-top: 3em
     }
@@ -45,21 +81,16 @@
 
     //section
 
-    section {
-        h2::after {
-            content: "______________________________________________";
-        }
-    }
 
     .section__container {
-        max-width: 90%;
+        max-width: 85%;
     }
 
-    .section--courses, .section--teachers, .section--aboutus {
+    .section--courses, .section--aboutus {
         flex-direction: column;
     }
 
-    .section--courses__column, .section--teachers__column, .section--aboutus--content {
+    .section--courses__column, .section--aboutus--content {
         max-width: 100%;
         padding: 0
     }
@@ -76,13 +107,24 @@
         padding-bottom: 3rem
     }
 
-    .button__section {
-        margin-bottom: 3rem
-    }
-
     //footer
 
     footer {
-        padding: 0 2rem
+        p {
+            top: 5%;
+            right: 13%;
+        }
+    }
+
+    .footer__container {
+        justify-content: space-between
+    }
+
+    .footer__nav {
+        padding-top: 3rem;
+    }
+
+    .footer__item {
+        padding: 1.5rem 1rem
     }
 }

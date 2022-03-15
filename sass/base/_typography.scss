@@ -10,16 +10,16 @@ body {
     text-align: center;
 
         &--left {
-            color: v.$heading-first;
+            color: v.$heading-white;
         }
 
         &--right {
-            color: v.$heading-second;
+            color: v.$heading-black;
         }
 
         &__paragraph {
         display: flex ;
-        color: v.$heading-third;
+        color: v.$heading-paragraph;
         margin-bottom: 5rem;
         font-weight: 700;
         text-align: center;
@@ -33,9 +33,10 @@ section {
     }
 
     h2::after {
-        content: "_________________________";
+        content: '';
+        border-bottom: 3px solid #000;
+        width: 18em;
         display: block;
-        color: black solid;
     }
 
     h3 {

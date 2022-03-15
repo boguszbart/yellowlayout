@@ -1,52 +1,69 @@
 // colors
-$body-color: hsl(48, 100%, 72%);
 
+$yellow-medium: rgb(248, 220, 95);
 
-$heading-first: hsl(0, 100%, 100%);
+$white: rgba(255, 255, 255, 1);
 
-$heading-second: hsl(0, 100%, 0%);
+$black: (
+    basic:  rgba(0, 0, 0, 1),
+    light: rgba(0, 0, 0, 0.7),
+    lighter: rgba(0, 0, 0, 0.2)
+);
 
-$heading-third: hsl(0, 5%, 33%);
+$gray: (
+    basic: rgb(128, 128, 128),
+    light: rgb(117, 113, 113)
+);
 
+// body
 
-$nav-first: hsla(0, 0%, 0%, 0.2);
-
-$nav-second: hsla(0, 0%, 0%, 0.7);
-
-$nav-third:hsl(0, 100%, 100%);
-
-
-$button-shadow-first: rgba(0,0,0,0.24);
-
-$button-shadow-second: rgba(0,0,0,0.19);
-
-$button-color-first: hsl(0, 100%, 100%);
-
-$button-color-second: hsl(0, 100%, 0%);
-
-
-$section-paragraph: hsl(0, 0%, 50%);
-
-
-$footer-background: hsl(0, 100%, 0%);
-
-$footer-text: hsl(0, 0%, 80%);
-
-$footer-nav: hsl(0, 100%, 100%);
-
-
-
-$text-small: 1.6em;
-
-$text-medium: 3.2em;
+$body-color: $yellow-medium;
 
 // heading
+
+$heading-white: $white;
+
+$heading-black: map-get($black, basic);
+
+$heading-paragraph: map-get($gray, light);
 
 $h-fs: 7em;
 
 
 // section
 
+$section-paragraph: map-get($gray, basic);
+
 $s-fs-heading: 5em;
 
 $s-fs-paragraph: 2em;
+
+// nav 
+
+$nav-background-color: map-get($black, lighter);
+
+$nav-background-color-hover: map-get($black, light);
+
+$nav-color: $white;
+
+// footer
+
+$footer-background: map-get($black, basic);
+
+$footer-text: map-get($gray, light);
+
+$footer-nav-color: $white;
+
+// buttons
+
+$button-shadow: map-get($black, lighter);
+
+$button-backgroundcolor: map-get($black, basic);
+
+$button-color: $white;
+
+// text
+
+$text-small: 1.6em;
+
+$text-medium: 3.2em;
