@@ -5,6 +5,7 @@
     <title>first layout </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/b99836af12.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -12,7 +13,10 @@
             <a href="" class="nav__logo"> 
                 <img src="images/logo.png" alt="logo">
             </a>
-            <ul class="nav__links">
+            <button class="nav__hamburger" id="nav__hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav__links" id="nav__links">
                 <li class="nav__item"><a href="">Home page</a></li>
                 <li class="nav__item"><a href="">courses</a></li>
                 <li class="nav__item"><a href="">about us</a></li>
@@ -164,4 +168,5 @@
             </p>
         </div> 
     </footer>
+    <script src="script.js"></script> <!-- have to put the script on the end because otherwise it loads after the page -->
 </body>

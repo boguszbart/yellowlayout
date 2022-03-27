@@ -5,11 +5,24 @@
 .nav {
     background-color: v.$nav-background-color;
     display: flex;
+    position: fixed;
+    width: 100%;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
 
         &__logo {
             padding: 3rem  
+        }
+
+        &__hamburger {
+            display: none;
+            background-color: transparent;
+            border: 0;
+            color: white;
+            font-size: v.$text-medium;
+            cursor: pointer;
         }
 
         &__links {
@@ -29,6 +42,6 @@
 
         &__item:hover a {
             background-color: v.$nav-background-color-hover ;
-        }
-            
+        }           
 }
+
