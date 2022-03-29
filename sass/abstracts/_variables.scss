@@ -6,8 +6,9 @@ $white: rgba(255, 255, 255, 1);
 
 $black: (
     basic:  rgba(0, 0, 0, 1),
-    light: rgba(0, 0, 0, 0.7),
-    lighter: rgba(0, 0, 0, 0.2)
+    dark: rgba(0, 0, 0, 0.8),
+    light: rgba(0, 0, 0, 0.6),
+    lighter: rgba(0, 0, 0, 0.345)
 );
 
 $gray: (
@@ -40,11 +41,15 @@ $s-fs-paragraph: 2em;
 
 // nav 
 
+$nav-background-color-hamburger: map-get($black, dark);
+
 $nav-background-color: map-get($black, lighter);
 
 $nav-background-color-hover: map-get($black, light);
 
 $nav-color: $white;
+
+$nav-border-color: $white;
 
 // footer
 
